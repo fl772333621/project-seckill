@@ -8,3 +8,11 @@ spring:
         max-idle: 20 # 连接池中的最大空闲连接
         min-idle: 5 #连接池中的最小空闲连接
         max-wait: 1000 # 连接池最大阻塞等待时间（使用负值表示没有限制）
+
+#配置日志
+logging:
+  level:
+    org.springframework.web: INFO
+    org.hibernate: ERROR
+    com.mfanw: DEBUG
+  file: log/my_springboot.log
